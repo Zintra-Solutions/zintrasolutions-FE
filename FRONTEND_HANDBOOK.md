@@ -8,7 +8,7 @@ This handbook defines how frontend collaborators should set up the project and c
 2. Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Zintra-Solutions/zintrasolutions-FE.git
 ```
 
 3. Move into the project folder:
