@@ -1,1 +1,675 @@
 @import "tailwindcss";
+
+/* ============================================================
+   ZINTRA CORE
+   Design System Foundation
+   Tailwind CSS v4.3
+   ============================================================ */
+
+
+/* ============================================================
+   01. THEME TOKENS
+   ============================================================ */
+
+@theme {
+
+    /* ==========================================================
+     TYPOGRAPHY
+     ========================================================== */
+
+    /*
+   * Font families
+   *
+   * Plus Jakarta Sans:
+   * Display + headings
+   *
+   * Manrope:
+   * Body + labels + utility text
+   */
+
+    --font-display: var(--font-plus-jakarta-sans);
+    --font-body: var(--font-manrope);
+
+
+    /* ----------------------------------------------------------
+     Display
+     ---------------------------------------------------------- */
+
+    --text-display-1: 64px;
+    --text-display-1--line-height: 76px;
+
+    --text-display-2: 52px;
+    --text-display-2--line-height: 58px;
+
+
+    /* ----------------------------------------------------------
+     Headings
+     ---------------------------------------------------------- */
+
+    --text-h1: 40px;
+    --text-h1--line-height: 46px;
+
+    --text-h2: 32px;
+    --text-h2--line-height: 40px;
+
+    --text-h3: 28px;
+    --text-h3--line-height: 34px;
+
+    --text-h4: 24px;
+    --text-h4--line-height: 30px;
+
+    --text-h5: 18px;
+    --text-h5--line-height: 26px;
+
+
+    /* ----------------------------------------------------------
+     Body
+     ---------------------------------------------------------- */
+
+    --text-body-lg: 18px;
+    --text-body-lg--line-height: 29px;
+
+    --text-body-base: 16px;
+    --text-body-base--line-height: 26px;
+
+    --text-body-sm: 14px;
+    --text-body-sm--line-height: 22px;
+
+    --text-caption: 12px;
+    --text-caption--line-height: 17px;
+
+
+    /* ----------------------------------------------------------
+     Labels
+     ---------------------------------------------------------- */
+
+    --text-label-lg: 16px;
+    --text-label-lg--line-height: 20px;
+
+    --text-label-base: 14px;
+    --text-label-base--line-height: 18px;
+
+
+    /* ----------------------------------------------------------
+     Interactive / Utility
+     ---------------------------------------------------------- */
+
+    --text-button: 16px;
+    --text-button--line-height: 16px;
+
+    --text-link: 16px;
+    --text-link--line-height: 26px;
+
+    --text-eyebrow: 12px;
+    --text-eyebrow--line-height: 16px;
+
+
+
+    /* ==========================================================
+     COLORS
+     ========================================================== */
+
+
+    /* ----------------------------------------------------------
+     ZINTRA BLUE — PRIMARY
+     Primary actions, links and focus states
+     ---------------------------------------------------------- */
+
+    --color-zintra-primary: #0B41DD;
+    --color-zintra-primary-hover: #0935B0;
+    --color-zintra-primary-tint: #EAEFFE;
+    --color-zintra-primary-muted: #A6B9F9;
+    --color-zintra-primary-focus: #6E90F2;
+    --color-zintra-primary-on: #FFFFFF;
+
+
+    /* ----------------------------------------------------------
+     CITRON GOLD — SECONDARY
+     Secondary actions, highlights and premium CTAs
+     ---------------------------------------------------------- */
+
+    --color-zintra-secondary: #E6B23A;
+    --color-zintra-secondary-hover: #C4931F;
+    --color-zintra-secondary-tint: #FBF3E1;
+    --color-zintra-secondary-muted: #F0D79A;
+    --color-zintra-secondary-focus: #EEC96B;
+    --color-zintra-secondary-on: #16181D;
+
+
+    /* ----------------------------------------------------------
+     ZINTRA LIME — SUCCESS
+     Positive states, confirmations and accents
+     ---------------------------------------------------------- */
+
+    --color-zintra-success: #8FC90D;
+    --color-zintra-success-hover: #6FA00A;
+    --color-zintra-success-tint: #F0F8DC;
+    --color-zintra-success-muted: #C7E486;
+    --color-zintra-success-focus: #A6D53F;
+    --color-zintra-success-on: #16181D;
+
+
+    /* ----------------------------------------------------------
+     MIDNIGHT NAVY — DEEP
+     Covers, footers and dark brand surfaces
+     ---------------------------------------------------------- */
+
+    --color-zintra-deep: #0A1E4F;
+    --color-zintra-deep-hover: #081840;
+    --color-zintra-deep-tint: #E7EAF2;
+    --color-zintra-deep-muted: #56699C;
+    --color-zintra-deep-focus: #2A417A;
+    --color-zintra-deep-on: #F4F1E8;
+
+
+    /* ----------------------------------------------------------
+     IVORY — SURFACE
+     Page backgrounds and light cards
+     ---------------------------------------------------------- */
+
+    --color-zintra-surface: #F4F1E8;
+    --color-zintra-surface-hover: #E9E4D6;
+    --color-zintra-surface-tint: #FBFAF5;
+    --color-zintra-surface-muted: #DED9CD;
+    --color-zintra-surface-focus: #D9D2BE;
+    --color-zintra-surface-on: #16181D;
+
+
+    /* ----------------------------------------------------------
+     INK — TEXT & BORDER
+     Body text, icons, borders and dark UI
+     ---------------------------------------------------------- */
+
+    --color-zintra-ink: #16181D;
+    --color-zintra-ink-hover: #0C0E12;
+    --color-zintra-ink-tint: #2A2E37;
+    --color-zintra-ink-muted: #687280;
+    --color-zintra-ink-focus: #3A3F47;
+    --color-zintra-ink-on: #F4F1E8;
+
+
+
+    /* ==========================================================
+     SEMANTIC COLORS
+     ========================================================== */
+
+    --color-zintra-background: var(--color-zintra-surface);
+    --color-zintra-foreground: var(--color-zintra-ink);
+
+    --color-zintra-card: var(--color-zintra-surface-tint);
+    --color-zintra-card-foreground: var(--color-zintra-ink);
+
+    --color-zintra-border: var(--color-zintra-surface-muted);
+
+    --color-zintra-action: var(--color-zintra-primary);
+    --color-zintra-action-hover: var(--color-zintra-primary-hover);
+    --color-zintra-action-foreground: var(--color-zintra-primary-on);
+
+    --color-zintra-success-action: var(--color-zintra-success);
+    --color-zintra-success-action-hover: var(--color-zintra-success-hover);
+    --color-zintra-success-foreground: var(--color-zintra-success-on);
+
+
+
+    /* ==========================================================
+     SPACING
+     ========================================================== */
+
+    /*
+   * Used for:
+   * - Padding
+   * - Margin
+   * - Gap
+   * - Layout rhythm
+   *
+   * 2px → 128px
+   */
+
+    --spacing-zintra-1: 2px;
+    --spacing-zintra-2: 4px;
+    --spacing-zintra-3: 8px;
+    --spacing-zintra-4: 12px;
+    --spacing-zintra-5: 16px;
+    --spacing-zintra-6: 20px;
+    --spacing-zintra-7: 24px;
+    --spacing-zintra-8: 32px;
+    --spacing-zintra-9: 40px;
+    --spacing-zintra-10: 48px;
+    --spacing-zintra-11: 64px;
+    --spacing-zintra-12: 80px;
+    --spacing-zintra-13: 96px;
+    --spacing-zintra-14: 128px;
+
+
+
+    /* ==========================================================
+     SIZING
+     ========================================================== */
+
+    /*
+   * Used for:
+   * - Control heights
+   * - Icon sizes
+   * - Avatar sizes
+   * - Badges
+   * - Fixed component dimensions
+   * - Container dimensions
+   *
+   * This is intentionally separate from spacing.
+   */
+
+    --zintra-size-1: 16px;
+    --zintra-size-2: 20px;
+    --zintra-size-3: 24px;
+    --zintra-size-4: 28px;
+    --zintra-size-5: 32px;
+    --zintra-size-6: 36px;
+    --zintra-size-7: 40px;
+    --zintra-size-8: 44px;
+    --zintra-size-9: 48px;
+    --zintra-size-10: 56px;
+    --zintra-size-11: 64px;
+    --zintra-size-12: 80px;
+    --zintra-size-13: 96px;
+    --zintra-size-14: 128px;
+    --zintra-size-15: 160px;
+
+
+
+    /* ==========================================================
+     RADIUS
+     ========================================================== */
+
+    --radius-zintra-1: 2px;
+    --radius-zintra-2: 4px;
+    --radius-zintra-3: 6px;
+    --radius-zintra-4: 8px;
+    --radius-zintra-5: 12px;
+    --radius-zintra-6: 16px;
+    --radius-zintra-7: 24px;
+    --radius-zintra-8: 9999px;
+}
+
+
+
+/* ============================================================
+   02. BASE
+   ============================================================ */
+
+@layer base {
+
+    *,
+    *::before,
+    *::after {
+        border-color: var(--color-zintra-border);
+    }
+
+
+    html {
+        font-family: var(--font-body);
+        background: var(--color-zintra-background);
+        color: var(--color-zintra-foreground);
+
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+
+    body {
+        min-height: 100vh;
+        margin: 0;
+
+        background: var(--color-zintra-background);
+        color: var(--color-zintra-foreground);
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-display);
+    }
+
+
+    button,
+    input,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+
+    button {
+        cursor: pointer;
+    }
+
+
+    button:disabled {
+        cursor: not-allowed;
+    }
+
+
+    a {
+        color: var(--color-zintra-ink);
+        font-size: var(--zintra-size-1);
+    }
+}
+
+
+
+/* ============================================================
+   03. ZINTRA TYPOGRAPHY UTILITIES
+   ============================================================ */
+
+@utility zintra-display-1 {
+    font-family: var(--font-display);
+    font-size: var(--text-display-1);
+    line-height: var(--text-display-1--line-height);
+}
+
+@utility zintra-display-2 {
+    font-family: var(--font-display);
+    font-size: var(--text-display-2);
+    line-height: var(--text-display-2--line-height);
+}
+
+@utility zintra-h1 {
+    font-family: var(--font-display);
+    font-size: var(--text-h1);
+    line-height: var(--text-h1--line-height);
+}
+
+@utility zintra-h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    line-height: var(--text-h2--line-height);
+}
+
+@utility zintra-h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    line-height: var(--text-h3--line-height);
+}
+
+@utility zintra-h4 {
+    font-family: var(--font-display);
+    font-size: var(--text-h4);
+    line-height: var(--text-h4--line-height);
+}
+
+@utility zintra-h5 {
+    font-family: var(--font-display);
+    font-size: var(--text-h5);
+    line-height: var(--text-h5--line-height);
+}
+
+@utility zintra-body-lg {
+    font-family: var(--font-body);
+    font-size: var(--text-body-lg);
+    line-height: var(--text-body-lg--line-height);
+}
+
+@utility zintra-body-base {
+    font-family: var(--font-body);
+    font-size: var(--text-body-base);
+    line-height: var(--text-body-base--line-height);
+}
+
+@utility zintra-body-sm {
+    font-family: var(--font-body);
+    font-size: var(--text-body-sm);
+    line-height: var(--text-body-sm--line-height);
+}
+
+@utility zintra-caption {
+    font-family: var(--font-body);
+    font-size: var(--text-caption);
+    line-height: var(--text-caption--line-height);
+}
+
+@utility zintra-label-lg {
+    font-family: var(--font-body);
+    font-size: var(--text-label-lg);
+    line-height: var(--text-label-lg--line-height);
+}
+
+@utility zintra-label-base {
+    font-family: var(--font-body);
+    font-size: var(--text-label-base);
+    line-height: var(--text-label-base--line-height);
+}
+
+@utility zintra-button {
+    font-family: var(--font-body);
+    font-size: var(--text-button);
+    line-height: var(--text-button--line-height);
+}
+
+@utility zintra-link {
+    font-family: var(--font-body);
+    font-size: var(--text-link);
+    line-height: var(--text-link--line-height);
+}
+
+@utility zintra-eyebrow {
+    font-family: var(--font-body);
+    font-size: var(--text-eyebrow);
+    line-height: var(--text-eyebrow--line-height);
+}
+
+
+
+/* ============================================================
+   04. ZINTRA SIZING UTILITIES
+   ============================================================ */
+
+@utility size-zintra-1 {
+    width: var(--zintra-size-1);
+    height: var(--zintra-size-1);
+}
+
+@utility size-zintra-2 {
+    width: var(--zintra-size-2);
+    height: var(--zintra-size-2);
+}
+
+@utility size-zintra-3 {
+    width: var(--zintra-size-3);
+    height: var(--zintra-size-3);
+}
+
+@utility size-zintra-4 {
+    width: var(--zintra-size-4);
+    height: var(--zintra-size-4);
+}
+
+@utility size-zintra-5 {
+    width: var(--zintra-size-5);
+    height: var(--zintra-size-5);
+}
+
+@utility size-zintra-6 {
+    width: var(--zintra-size-6);
+    height: var(--zintra-size-6);
+}
+
+@utility size-zintra-7 {
+    width: var(--zintra-size-7);
+    height: var(--zintra-size-7);
+}
+
+@utility size-zintra-8 {
+    width: var(--zintra-size-8);
+    height: var(--zintra-size-8);
+}
+
+@utility size-zintra-9 {
+    width: var(--zintra-size-9);
+    height: var(--zintra-size-9);
+}
+
+@utility size-zintra-10 {
+    width: var(--zintra-size-10);
+    height: var(--zintra-size-10);
+}
+
+@utility size-zintra-11 {
+    width: var(--zintra-size-11);
+    height: var(--zintra-size-11);
+}
+
+@utility size-zintra-12 {
+    width: var(--zintra-size-12);
+    height: var(--zintra-size-12);
+}
+
+@utility size-zintra-13 {
+    width: var(--zintra-size-13);
+    height: var(--zintra-size-13);
+}
+
+@utility size-zintra-14 {
+    width: var(--zintra-size-14);
+    height: var(--zintra-size-14);
+}
+
+@utility size-zintra-15 {
+    width: var(--zintra-size-15);
+    height: var(--zintra-size-15);
+}
+
+
+
+/* ============================================================
+   05. ZINTRA HEIGHT UTILITIES
+   ============================================================ */
+
+@utility h-zintra-1 {
+    height: var(--zintra-size-1);
+}
+
+@utility h-zintra-2 {
+    height: var(--zintra-size-2);
+}
+
+@utility h-zintra-3 {
+    height: var(--zintra-size-3);
+}
+
+@utility h-zintra-4 {
+    height: var(--zintra-size-4);
+}
+
+@utility h-zintra-5 {
+    height: var(--zintra-size-5);
+}
+
+@utility h-zintra-6 {
+    height: var(--zintra-size-6);
+}
+
+@utility h-zintra-7 {
+    height: var(--zintra-size-7);
+}
+
+@utility h-zintra-8 {
+    height: var(--zintra-size-8);
+}
+
+@utility h-zintra-9 {
+    height: var(--zintra-size-9);
+}
+
+@utility h-zintra-10 {
+    height: var(--zintra-size-10);
+}
+
+@utility h-zintra-11 {
+    height: var(--zintra-size-11);
+}
+
+@utility h-zintra-12 {
+    height: var(--zintra-size-12);
+}
+
+@utility h-zintra-13 {
+    height: var(--zintra-size-13);
+}
+
+@utility h-zintra-14 {
+    height: var(--zintra-size-14);
+}
+
+@utility h-zintra-15 {
+    height: var(--zintra-size-15);
+}
+
+
+
+/* ============================================================
+   06. ZINTRA WIDTH UTILITIES
+   ============================================================ */
+
+@utility w-zintra-1 {
+    width: var(--zintra-size-1);
+}
+
+@utility w-zintra-2 {
+    width: var(--zintra-size-2);
+}
+
+@utility w-zintra-3 {
+    width: var(--zintra-size-3);
+}
+
+@utility w-zintra-4 {
+    width: var(--zintra-size-4);
+}
+
+@utility w-zintra-5 {
+    width: var(--zintra-size-5);
+}
+
+@utility w-zintra-6 {
+    width: var(--zintra-size-6);
+}
+
+@utility w-zintra-7 {
+    width: var(--zintra-size-7);
+}
+
+@utility w-zintra-8 {
+    width: var(--zintra-size-8);
+}
+
+@utility w-zintra-9 {
+    width: var(--zintra-size-9);
+}
+
+@utility w-zintra-10 {
+    width: var(--zintra-size-10);
+}
+
+@utility w-zintra-11 {
+    width: var(--zintra-size-11);
+}
+
+@utility w-zintra-12 {
+    width: var(--zintra-size-12);
+}
+
+@utility w-zintra-13 {
+    width: var(--zintra-size-13);
+}
+
+@utility w-zintra-14 {
+    width: var(--zintra-size-14);
+}
+
+@utility w-zintra-15 {
+    width: var(--zintra-size-15);
+}
