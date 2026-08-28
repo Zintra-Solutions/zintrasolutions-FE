@@ -673,3 +673,17 @@
 @utility w-zintra-15 {
     width: var(--zintra-size-15);
 }
+
+/* BACKGROUND GRADIENT */
+@utility bg-gradient {
+    border-radius: 600px;
+    opacity: 0.6;
+    background: linear-gradient(358deg, #0B41DD 12.05%, #D648F8 76.8%, rgba(255, 255, 255, 0) 97.43%);
+    filter: blur(25px);
+    width: 800px;
+    height: 600px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
