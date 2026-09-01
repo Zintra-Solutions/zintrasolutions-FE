@@ -288,6 +288,8 @@
     --radius-zintra-6: 16px;
     --radius-zintra-7: 24px;
     --radius-zintra-8: 9999px;
+
+    --shadow-zintra: 0 4px 4px 0 rgba(97, 142, 251, 0.40);
 }
 
 

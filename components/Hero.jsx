@@ -22,10 +22,38 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
-            <section className="relative mt-zintra-13 overflow-hidden">
-                <div className="bg-gradient absolute"></div>
-                <div className="relative z-10 flex items-center justify-center ">
+            <section className="relative mt-zintra-13 flex justify-center items-center ">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <div className="bg-gradient absolute inset-x-0 top-20 h-[150%] rounded-t-full"></div>
+                </div>
+                <div className="relative z-10 flex items-center justify-center">
                     <Image src="/images/hero-phone.png" alt="Hero background" width={301} height={600} />
+
+                    <div className="absolute right-full mr-40 top-50 -translate-y-1/2 w-max inline-flex items-center p-5 gap-zintra-7 bg-zintra-success-focus rounded-xl shadow-zintra">
+                        <div className="flex flex-col items-start gap-2">
+                            <h4 className="text-h4 font-bold">80%</h4>
+                            <p className="text-eyebrow">Increased Growth Rate</p>
+                        </div>
+                        <Image src="/images/ChartLineUp.svg" alt="chartup" width={48} height={48} />
+                    </div>
+
+                    <div className="absolute right-92 -top-15 w-37.5 h-31.75 p-2.5 rounded-xl shadow-zintra overflow-hidden flex flex-col justify-start">
+                        <Image
+                            src="/images/black.jpg"
+                            alt="Card background"
+                            fill
+                            className="object-cover object-center z-0"
+                            priority
+                        />
+
+                        <div className="absolute inset-0 bg-linear-to-b from-black/70 to-[#666666]/07 z-10 pointer-events-none" />
+
+                        <div className="relative z-20 text-white flex flex-col gap-0.5 pb-1">
+                            <h4 className="text-[11px] font-bold tracking-wide">Aura Wellness</h4>
+                            <p className="text-[8px] text-zintra-ink-on/70">Website Development</p>
+                        </div>
+                    </div>
+
                 </div>
 
             </section>
@@ -33,3 +61,5 @@ const Hero = () => {
     )
 }
 export default Hero
+
+
