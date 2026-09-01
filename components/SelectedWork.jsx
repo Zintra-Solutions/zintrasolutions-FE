@@ -11,7 +11,7 @@ const SelectedWork = () => {
 
     return (
         <section id="work" className="relative mt-zintra-14 py-zintra-13 bg-zintra-surface overflow-hidden">
-            <div className="absolute -top-zintra-11 -left-zintra-11 w-80 h-80 rounded-full bg-gradient-to-br from-zintra-success via-zintra-secondary to-transparent opacity-70 blur-3xl pointer-events-none" />
+            <div className="absolute -top-[242px] -left-[128px] w-[420px] h-[420px] rounded-full bg-gradient-to-br from-zintra-success via-zintra-secondary to-transparent opacity-70 blur-3xl pointer-events-none" />
 
             <div className="relative max-w-7xl mx-auto px-zintra-7">
                 <div className="flex items-center justify-between gap-zintra-6">
@@ -24,17 +24,17 @@ const SelectedWork = () => {
                     </a>
                 </div>
 
-                <div className="flex gap-zintra-6 mt-zintra-10 overflow-x-auto pb-zintra-4 -mx-zintra-7 px-zintra-7 snap-x snap-mandatory">
+                <div className="flex gap-[25px] mt-[70px] overflow-x-auto pb-zintra-4 -mx-zintra-7 px-zintra-7 snap-x snap-mandatory">
                     {projects.map((project, index) => (
                         <div
                             key={`${project.name}-${index}`}
-                            className="relative shrink-0 w-72 h-96 rounded-zintra-6 overflow-hidden snap-start"
+                            className="relative shrink-0 w-[379px] h-96 snap-start"
                         >
                             <Image
                                 src={project.image}
                                 alt={project.name}
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                             />
                         </div>
                     ))}
