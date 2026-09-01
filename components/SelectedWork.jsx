@@ -3,10 +3,10 @@ import ArrowIcon from "@/components/icons/ArrowIcon"
 
 const SelectedWork = () => {
     const projects = [
-        { name: "NexGen FinTech", category: "Mobile App & Infrastructure" },
-        { name: "Aura Wellness", category: "Website Development" },
-        { name: "505 Arctic", category: "Branding & UX Design" },
-        { name: "505 Arctic", category: "Branding & UX Design" },
+        { name: "NexGen FinTech", image: "/images/work-nexgen-fintech.png" },
+        { name: "Aura Wellness", image: "/images/work-aura-wellness.png" },
+        { name: "505 Arctic", image: "/images/work-505-arctic.png" },
+        { name: "505 Arctic", image: "/images/work-505-arctic.png" },
     ]
 
     return (
@@ -28,18 +28,14 @@ const SelectedWork = () => {
                     {projects.map((project, index) => (
                         <div
                             key={`${project.name}-${index}`}
-                            className="relative shrink-0 w-72 h-96 rounded-zintra-6 overflow-hidden snap-start bg-gradient-to-b from-zintra-ink-tint to-black"
+                            className="relative shrink-0 w-72 h-96 rounded-zintra-6 overflow-hidden snap-start"
                         >
                             <Image
-                                src="/images/hero-phone.png"
-                                alt=""
+                                src={project.image}
+                                alt={project.name}
                                 fill
-                                className="object-cover object-bottom opacity-70 grayscale contrast-125 brightness-50"
+                                className="object-cover"
                             />
-                            <div className="absolute inset-0 flex flex-col justify-start p-zintra-7 text-white">
-                                <h3 className="text-h4 font-bold">{project.name}</h3>
-                                <p className="text-body-sm text-white/70 mt-zintra-2">{project.category}</p>
-                            </div>
                         </div>
                     ))}
                 </div>

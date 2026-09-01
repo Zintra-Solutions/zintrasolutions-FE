@@ -16,7 +16,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="bg-zintra-ink text-white pt-zintra-13 pb-zintra-7">
+        <footer className="bg-zintra-ink text-white pt-zintra-13 pb-zintra-7 border-t border-white/10">
             <div className="max-w-7xl mx-auto px-zintra-7">
                 <div className="flex flex-wrap justify-between gap-zintra-10">
                     <div className="max-w-xs">
