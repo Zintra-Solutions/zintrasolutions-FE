@@ -57,7 +57,7 @@ const Footer = () => {
                             <p className="text-label-base text-white/50">CONTACT</p>
                             <p className="mt-zintra-6">
                                 <a href="mailto:zintrasolutions@gmail.com" className="text-white hover:text-white/70">
-                                    zintrasolutions@gmail.com
+                                    admin@zintrasolution.com
                                 </a>
                             </p>
                         </div>

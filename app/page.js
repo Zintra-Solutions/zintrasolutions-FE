@@ -4,7 +4,7 @@ import SelectedWork from "@/components/SelectedWork"
 import Testimonial from "@/components/Testimonial"
 import Insights from "@/components/Insights"
 import FinalCTA from "@/components/FinalCTA"
-import Footer from "@/components/Footer"
+
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <Testimonial />
       <Insights />
       <FinalCTA />
-      <Footer />
+      
     </main>
   )
 }

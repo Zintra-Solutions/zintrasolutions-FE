@@ -290,6 +290,7 @@
     --radius-zintra-8: 9999px;
 
     --shadow-zintra: 0 4px 4px 0 rgba(97, 142, 251, 0.40);
+
 }
 
 
@@ -358,6 +359,20 @@
     a {
         color: var(--color-zintra-ink);
         font-size: var(--zintra-size-1);
+    }
+
+    .carousel {
+        animation: slide 30s linear infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -26,10 +27,11 @@ export default function RootLayout({ children }) {
       className={`${manrope.variable} ${plusJakartaSans.variable} h-full antialiased`}
     >
       <body className="min-h-full">
+        <Header />
         <main>
-          <Header/>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

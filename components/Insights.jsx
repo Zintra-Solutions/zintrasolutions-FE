@@ -39,7 +39,7 @@ const Insights = () => {
                         key={index}
                         className="bg-zintra-card rounded-zintra-6 overflow-hidden border border-zintra-border"
                     >
-                        <div className="relative w-full aspect-[3/2]">
+                        <div className="relative w-full aspect-3/2">
                             <Image src={post.image} alt={post.title} fill className="object-cover" />
                         </div>
                         <div className="p-zintra-7">
