@@ -1,19 +1,23 @@
-import Image from "next/image"
+
+"use client"
+
 import ArrowIcon from "@/components/icons/ArrowIcon"
+import Carousel from "./selectedWork/Carousel"
 
 const SelectedWork = () => {
     const projects = [
-        { name: "NexGen FinTech", image: "/images/work-nexgen-fintech.png" },
-        { name: "Aura Wellness", image: "/images/work-aura-wellness.png" },
-        { name: "505 Arctic", image: "/images/work-505-arctic.png" },
-        { name: "505 Arctic", image: "/images/work-505-arctic.png" },
+        { name: "NexGen FinTech", subtitle: "Mobile App & Infrastructure", desc: "200% INCREASE IN CONVERSION", image: "/images/black.jpg", staggered: false, },
+        { name: "Aura Wellness", subtitle: "Health & Fitness", desc: "150% USER ENGAGEMENT", image: "/images/black.jpg", staggered: true, },
+        { name: "505 Arctic", subtitle: "E-Commerce Platform", desc: "90% RETENTION RATE", image: "/images/black.jpg", staggered: false, },
+        { name: "505 Arctic Retail", subtitle: "E-Commerce Platform", desc: "90% RETENTION RATE", image: "/images/black.jpg", staggered: true, },
     ]
 
     return (
-        <section id="work" className="relative mt-zintra-14 py-zintra-13 bg-zintra-surface overflow-hidden">
-            <div className="absolute -top-60.5 left-[-128px] w-105 h-105 rounded-full bg-linear-to-br from-zintra-success via-zintra-secondary to-transparent opacity-70 blur-3xl pointer-events-none" />
+        <section id="work" className="relative mt-zintra-14 pt-zintra-13 bg-zintra-surface overflow-hidden">
+            <div  className=" absolute -top-52 -left-24 w-96 h-96 rounded-full bg-[radial-gradient(circle_at_25%_55%,var(--color-zintra-success)_0%,var(--color-zintra-secondary)_42%,transparent_70%)] blur-[20px] pointer-events-none" />
 
             <div className="relative max-w-7xl mx-auto px-zintra-7">
+
                 <div className="flex items-center justify-between gap-zintra-6">
                     <h2 className="text-h1 font-bold">Selected work</h2>
                     <a href="#" className="flex items-center gap-3 text-body-base shrink-0">
@@ -24,23 +28,10 @@ const SelectedWork = () => {
                     </a>
                 </div>
 
-                <div className="flex gap-6.25 mt-17.5 overflow-x-auto pb-zintra-4 -mx-zintra-7 px-zintra-7 snap-x snap-mandatory">
-                    {projects.map((project, index) => (
-                        <div
-                            key={`${project.name}-${index}`}
-                            className="relative shrink-0 w-94.75 h-96 snap-start"
-                        >
-                            <Image
-                                src={project.image}
-                                alt={project.name}
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                    ))}
-                </div>
+                <Carousel projects={projects} />
+
             </div>
         </section>
     )
 }
-export default SelectedWork
+export default SelectedWork;
