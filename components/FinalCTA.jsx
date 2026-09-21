@@ -1,4 +1,4 @@
-import ArrowRightIcon from "@/components/icons/ArrowRightIcon"
+import Image from "next/image"
 
 const FinalCTA = () => {
     return (
@@ -10,10 +10,12 @@ const FinalCTA = () => {
                 </p>
                 <a
                     href="#"
-                    className="flex items-center gap-3 bg-zintra-primary text-white px-zintra-7 py-zintra-4 rounded-full mt-zintra-9 hover:bg-zintra-primary-hover"
+                    className="flex items-center gap-4 bg-zintra-surface text-zintra-ink py-zintra-3 ps-zintra-7 pe-zintra-3 rounded-full mt-zintra-9"
                 >
-                    <ArrowRightIcon className="w-4 h-4" />
-                    Let&apos;s Talk
+                    Book a call
+                    <span className="bg-zintra-secondary w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                        <Image src="/images/nav-arrow.svg" width={12} height={12} alt="" />
+                    </span>
                 </a>
             </div>
         </section>
