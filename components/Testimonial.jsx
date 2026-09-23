@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 
 const Testimonial = () => {
@@ -18,17 +20,24 @@ const Testimonial = () => {
         },
     ]
 
-    return (
-        <section className="mt-zintra-14 py-zintra-13 bg-zintra-primary-tint">
-            <div className="max-w-7xl mx-auto px-zintra-7">
-                <p className="text-caption font-bold tracking-wide text-zintra-primary">FROM OUR CLIENTS</p>
-                <h2 className="text-h1 font-bold mt-zintra-3">Testimonial</h2>
+    // Duplicated once so the marquee's -50% translate loops seamlessly
+    const loop = [...testimonials, ...testimonials]
 
-                <div className="flex gap-zintra-7 mt-zintra-9 overflow-x-auto pb-zintra-4 -mx-zintra-7 px-zintra-7 snap-x snap-mandatory">
-                    {testimonials.map((testimonial, index) => (
+    return (
+        <section className="mt-zintra-14 py-zintra-13 bg-white overflow-hidden">
+            <div className="max-w-7xl mx-auto px-zintra-7">
+                <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
+                    Testimonials
+                </span>
+                <h2 className="text-h1 font-bold mt-zintra-5">Hear from our clients</h2>
+            </div>
+
+            <div className="relative mt-zintra-9">
+                <div className="carousel flex w-max gap-zintra-7 px-zintra-7 hover:[animation-play-state:paused]">
+                    {loop.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="shrink-0 w-full max-w-xl bg-white rounded-zintra-6 p-zintra-9 snap-start"
+                            className="w-[380px] sm:w-[520px] shrink-0 bg-zintra-card rounded-zintra-6 p-zintra-9"
                         >
                             <p className="text-h4 font-medium leading-snug">&ldquo;{testimonial.quote}&rdquo;</p>
                             <div className="flex items-center gap-zintra-5 mt-zintra-8">
