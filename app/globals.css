@@ -323,7 +323,7 @@
         min-height: 100vh;
         margin: 0;
 
-        background: var(--color-zintra-background);
+        background: var(--color-zintra-primary-on);
         color: var(--color-zintra-foreground);
     }
 

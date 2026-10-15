@@ -14,7 +14,7 @@ const Header = () => {
     ]
     return (
         <main className=" text-zintra-ink border-b border-zintra-ink/5">
-            <header className="max-w-7xl mx-auto flex justify-between items-center py-zintra-8 ">
+            <header className="max-w-7xl mx-auto flex justify-between items-center py-zintra-7 ">
                 <div>
                     <Link href="/">
                         <Image src="/images/nav-img.png" alt="Logo" width={100} height={36} />
@@ -30,10 +30,9 @@ const Header = () => {
                     </nav>
 
                     <nav>
-                        <Link href="#" className="flex items-center gap-4 bg-zintra-ink w-fit text-zintra-ink-on py-zintra-3 ps-zintra-7 pe-zintra-3 rounded-full">
-                            Book a call
-                            <span className="bg-zintra-secondary w-10 h-10 rounded-full flex justify-center items-center"><Image src="/images/nav-arrow.svg" width={12} height={12} alt="nav-arrow" /></span>
-                        </Link>
+                        <Button iconRight="/images/nav-arrow.svg" type="ctaPrimary" size="iconOnly" >
+                            Learn More
+                        </Button>
 
                     </nav>
                 </div>

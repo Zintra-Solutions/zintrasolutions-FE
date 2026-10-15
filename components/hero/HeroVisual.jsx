@@ -8,33 +8,74 @@ const HeroVisual = () => {
     return (
         <section className="relative mt-zintra-13 flex justify-center items-center">
             {/* Background */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="bg-gradient absolute inset-x-0 top-20 h-[150%] rounded-t-full" />
+            <div className="absolute inset-0  pointer-events-none">
+                {/* <div className="bg-gradient absolute inset-x-0 top-20 h-[150%] rounded-t-full" /> */}
+                <Image
+                 width={850}
+                 height={850}
+                 src="/images/Ellipses.png"
+                    alt="Hero background"
+                    className="absolute flex justify-center items-center -top-12 left-0 right-0 mx-auto  z-0"
+                />
             </div>
 
             {/* Main visual */}
             <div className="relative z-10 flex items-center justify-center">
                 <Image
-                    src="/images/hero-phone.png"
+                    src="/images/phone.png"
                     alt="Hero phone"
-                    width={301}
-                    height={600}
+                    width={460}
+                    height={360}
                 />
 
-                <HeroGrowthCard />
+                {/* <HeroGrowthCard /> */}
 
-                <HeroAuraCard />
+                {/* <div className="absolute right-130 -top-15 w-37.5 h-31.75 p-2.5 ">
+                    
+                </div> */}
 
-                <div className="absolute left-90 -top-4 border w-max h-max bg-zintra-secondary-focus p-zintra-6 inline-flex items-center justify-center rounded-zintra-5 gap-zintra-6 text-zintra-ink shadow-zintra">
+                <Image
+                    src="/images/heroTopLeft.png"
+                    alt=""
+                    width={210}
+                    height={115}                   
+                    className="absolute right-120 top-0 w-37.5 h-31.75"
+                    priority
+                />
+
+                {/* <HeroAuraCard /> */}
+                <Image
+                    src="/images/heroBottomLeft.png"
+                    width={210}
+                    height={100}
+                    alt="hero bottle"
+                    className="absolute -left-70 top-35" />
+
+                {/* <div className="absolute left-90 -top-4 border w-max h-max bg-zintra-secondary-focus p-zintra-6 inline-flex items-center justify-center rounded-zintra-5 gap-zintra-6 text-zintra-ink shadow-zintra">
 
                     <div>
                         <h4 className="font-bold text-2xl leading-6 tracking-[-0.345px] ">10 <span className="text-sm">items</span></h4>
                         <p className="text-sm font-medium leading-6">Sold this week</p>
                     </div>
                     <Image src="/images/hero-bottle.png" width={40} height={60} alt="hero bottle" className="aspect-2/3" />
-                </div>
+                </div> */}
 
-                <div className="absolute -right-90 top-50 -translate-y-1/2 bg-zintra-card w-37.5 h-max px-1 pt-1 pb-6 rounded-zintra-5 shadow-zintra">
+                <Image
+                    src={"/images/heroTopRight.png"}
+                    width={210}
+                    height={115}
+                    alt="hero top right"
+                    className="absolute left-140 -top-4"
+                />
+                <Image
+                    src={"/images/heroButtomRight.png"}
+                    width={300}
+                    height={115}
+                    alt="hero top right"
+                    className="absolute -right-85 top-40"
+                />
+
+                {/* <div className="absolute -right-90 top-50 -translate-y-1/2 bg-zintra-card w-37.5 h-max px-1 pt-1 pb-6 rounded-zintra-5 shadow-zintra">
                     <div className="rounded-zintra-4 overflow-hidden">
                         <Image src="/images/hero-girl.png" alt="hero girl" width="150" height="60" className="w-full" object-cover="true" />
                     </div>
@@ -52,7 +93,7 @@ const HeroVisual = () => {
                             </Link>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </section>

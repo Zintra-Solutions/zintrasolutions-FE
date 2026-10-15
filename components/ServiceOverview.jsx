@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import ArrowRightSmallIcon from "@/components/icons/ArrowRightSmallIcon"
+import Button from "./ui/Button"
 
 const Insights = () => {
     const capabilities = [
@@ -60,23 +61,17 @@ const Insights = () => {
     }, [])
 
     return (
-        <section id="insights" className="bg-white mt-zintra-14">
+        <section id="insights" className="bg-white py-zintra-13">
             <div className="max-w-7xl mx-auto px-zintra-7">
                 <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
-                    About us
+                    Services we offer
                 </span>
 
                 <div className="flex items-center justify-between gap-zintra-6 mt-zintra-5">
-                    <h2 className="text-h1 font-bold">Get to know Zintra</h2>
-                    <a
-                        href="#"
-                        className="flex items-center gap-4 bg-white border border-zintra-border w-fit text-zintra-ink py-zintra-3 ps-zintra-7 pe-zintra-3 rounded-full shrink-0"
-                    >
-                        See more
-                        <span className="bg-zintra-secondary w-10 h-10 rounded-full flex items-center justify-center shrink-0">
-                            <Image src="/images/nav-arrow.svg" width={12} height={12} alt="" />
-                        </span>
-                    </a>
+                    <h2 className="text-display-2 font-bold">What we can do for you</h2>
+                    <Button iconRight="/images/nav-arrow.svg" type="ctaSecondary" size="iconOnly" >
+                        Learn More
+                    </Button>
                 </div>
 
                 <div

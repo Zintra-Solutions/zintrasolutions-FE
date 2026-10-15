@@ -6,7 +6,7 @@ const ButtonSample = () => {
         <div className="min-h-screen flex justify-center items-center gap-4">
 
 
-
+        
             <Button>
                 Book a call
             </Button>
@@ -22,7 +22,7 @@ const ButtonSample = () => {
             <Button type="brand" label="Book a call">
                 Book a call
             </Button>
-            <Button type="outline-brand" label="Book a call">
+            <Button type="outlineBrand" label="Book a call">
                 Book a call
             </Button>
             <Button type="link" label="Book a call">
@@ -38,8 +38,12 @@ const ButtonSample = () => {
             <Button type="warning" label="Book a call">
                 Book a call
             </Button>
-           
-            
+
+            <Button iconRight="/images/nav-arrow.svg" type="ctaPrimary" size="iconOnly" >
+                Book a call
+            </Button>
+             
+
         </div>
     )
 }

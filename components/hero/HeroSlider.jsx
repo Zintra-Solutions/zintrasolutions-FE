@@ -13,9 +13,9 @@ const HeroSlider = () => {
         <main className="w-full overflow-hidden">
             <div className="flex w-max carousel">
 
-                <div className="flex shrink-0 items-center gap-32 py-zintra-10 pr-32 font-display bg-zintra-background font-semibold text-zintra-deep text-h3">
+                <div className="flex shrink-0 items-center gap-32 py-zintra-10 pr-32 font-display bg-zintra-primary-on font-semibold text-[#9BA3B2]  text-h3">
                     {doubleSlider.map((item, index) => (
-                        <p key={`${item.id}-${index}`}>
+                        <p key={`${item.id}-${index}`} >
                             {item.text}
                         </p>
                     ))}
