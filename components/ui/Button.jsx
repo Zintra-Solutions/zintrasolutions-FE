@@ -4,7 +4,7 @@ import { forwardRef } from "react"
 
 const buttonVariants = tv({
     slots: {
-        base: "inline-flex justify-center items-center gap-zintra-3 rounded-full font-semibold transition-colors cursor-pointer",
+        base: "inline-flex justify-center items-center gap-zintra-3 rounded-full font-semibold transition-colors cursor-pointer whitespace-nowrap",
         iconLeftWrapper: "flex justify-center items-center shrink-0",
         iconRightWrapper: "flex justify-center items-center shrink-0"
     },

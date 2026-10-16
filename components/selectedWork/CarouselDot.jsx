@@ -2,7 +2,7 @@
 
 const CarouselDots = ({ count, activeIndex }) => {
     return (
-        <div className="flex justify-center items-center gap-2 mt-4">
+        <div className="flex justify-center items-center gap-2 mb-12">
             {Array.from({ length: count }).map((_, index) => (
                 <div
                     key={`dot-${index}`}

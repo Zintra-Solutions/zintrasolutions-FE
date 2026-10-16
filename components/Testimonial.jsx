@@ -18,13 +18,20 @@ const Testimonial = () => {
             role: "VP Product, Aura Wellness",
             avatar: "https://i.pravatar.cc/150?img=47",
         },
+        {
+            quote:
+                "Zintra rebuilt our checkout in nine weeks and treated our conversion rate like it was their own KPI. Best external team we've worked with.",
+            name: "Maya Adeyemi",
+            role: "VP Product, Aura Wellness",
+            avatar: "https://i.pravatar.cc/150?img=47",
+        },
     ]
 
     // Duplicated once so the marquee's -50% translate loops seamlessly
     const loop = [...testimonials, ...testimonials]
 
     return (
-        <section className="mt-zintra-14 py-zintra-13 bg-white overflow-hidden">
+        <section className="py-zintra-13 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-zintra-7">
                 <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
                     Testimonials
@@ -37,7 +44,7 @@ const Testimonial = () => {
                     {loop.map((testimonial, index) => (
                         <div
                             key={index}
-                            className="w-[380px] sm:w-[520px] shrink-0 bg-zintra-card rounded-zintra-6 p-zintra-9"
+                            className="w-95 sm:w-130 shrink-0 bg-zintra-primary-tint rounded-zintra-6 p-zintra-9"
                         >
                             <p className="text-h4 font-medium leading-snug">&ldquo;{testimonial.quote}&rdquo;</p>
                             <div className="flex items-center gap-zintra-5 mt-zintra-8">

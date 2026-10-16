@@ -36,7 +36,7 @@ const Carousel = ({ projects }) => {
     }
 
     return (
-        <section className="relative mt-17.5">
+        <section className="relative ">
             {/* Left arrow */}
             <CarouselArrow
                 direction="left"

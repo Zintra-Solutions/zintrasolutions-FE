@@ -12,7 +12,7 @@ const SelectedWork = () => {
     ]
 
     return (
-        <section id="work" className="relative pt-zintra-13 bg-white overflow-hidden">
+        <section id="work" className="relative pt-zintra-13 bg-zintra-surface-tint overflow-hidden">
 
             <div className="relative max-w-7xl mx-auto px-zintra-7">
 

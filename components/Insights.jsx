@@ -1,5 +1,6 @@
 import Image from "next/image"
 import ArrowIcon from "@/components/icons/ArrowIcon"
+import Button from "./ui/Button"
 
 const LatestInsights = () => {
     const posts = [
@@ -33,9 +34,9 @@ const LatestInsights = () => {
         <section id="latest-insights" className="bg-white mt-zintra-14">
             <div className="max-w-7xl mx-auto px-zintra-7">
                 <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
-                    From our blog
+                    Latest Insights
                 </span>
-                <h2 className="text-h1 font-bold mt-zintra-5">Latest Insights</h2>
+                <h2 className="text-h1 font-bold mt-zintra-5">From our blog</h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-zintra-8 mt-zintra-9">
                     {posts.map((post, index) => (
@@ -53,12 +54,9 @@ const LatestInsights = () => {
                                 </p>
                                 <div className="flex items-center justify-between gap-zintra-6 mt-zintra-4">
                                     <h3 className="text-h5 font-bold">{post.title}</h3>
-                                    <a href="#" className="flex items-center gap-3 text-body-base shrink-0">
+                                    <Button iconRight="/images/nav-arrow.svg"  type="ctaSecondary" size="iconOnly">
                                         Read more
-                                        <span className="bg-zintra-ink text-white w-10 h-10 rounded-full flex items-center justify-center shrink-0">
-                                            <ArrowIcon className="w-3 h-3" />
-                                        </span>
-                                    </a>
+                                    </Button>
                                 </div>
                             </div>
                         </article>
