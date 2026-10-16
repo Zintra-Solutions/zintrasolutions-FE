@@ -30,8 +30,8 @@ const Header = () => {
                     </nav>
 
                     <nav>
-                        <Button iconRight="/images/nav-arrow.svg" type="ctaPrimary" size="iconOnly" >
-                            Learn More
+                        <Button iconRight="/images/nav-arrow.svg" type="ctaSecondary" size="iconOnly" >
+                            Book a call
                         </Button>
 
                     </nav>
