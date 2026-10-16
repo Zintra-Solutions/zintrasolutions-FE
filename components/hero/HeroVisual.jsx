@@ -35,7 +35,7 @@ const HeroVisual = () => {
                 </div> */}
 
                 <Image
-                    src="/images/heroTopLeft.png"
+                    src="/images/heroTopleft.png"
                     alt=""
                     width={210}
                     height={115}                   
@@ -45,11 +45,12 @@ const HeroVisual = () => {
 
                 {/* <HeroAuraCard /> */}
                 <Image
-                    src="/images/heroBottomLeft.png"
+                    src="/images/heroBottomleft.png"
                     width={210}
                     height={100}
                     alt="hero bottle"
-                    className="absolute -left-70 top-35" />
+                    className="absolute -left-70 top-35"
+                />
 
                 {/* <div className="absolute left-90 -top-4 border w-max h-max bg-zintra-secondary-focus p-zintra-6 inline-flex items-center justify-center rounded-zintra-5 gap-zintra-6 text-zintra-ink shadow-zintra">
 
