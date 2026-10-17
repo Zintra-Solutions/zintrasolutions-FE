@@ -1,8 +1,11 @@
+import ServiceHero from "@/components/services/ServiceHero"
 
 
 const ServicesPage = () => {
   return (
-    <div>ServicesPage</div>
+    <main className="min-h-screen">
+        <ServiceHero />
+    </main>
   )
 }
 export default ServicesPage
