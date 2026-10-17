@@ -61,7 +61,7 @@ const Insights = () => {
     }, [])
 
     return (
-        <section id="insights" className="bg-white py-zintra-13">
+        <section id="services" className="bg-white py-zintra-13">
             <div className="max-w-7xl mx-auto px-zintra-7">
                 <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
                     Services we offer

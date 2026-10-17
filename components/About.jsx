@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const About = () => {
     return (
-        <section className="bg-zintra-primary-tint">
+        <section id="about" className="bg-zintra-primary-tint">
             <div className="max-w-7xl mx-auto px-zintra-7 py-zintra-13">
                 <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
                     About us

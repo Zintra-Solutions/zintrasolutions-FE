@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Button from "./ui/Button"
 
 const FinalCTA = () => {
     return (
@@ -8,15 +9,9 @@ const FinalCTA = () => {
                 <p className="text-body-base text-white/70 mt-zintra-6">
                     Tell us where the numbers should move. We&apos;ll reply within two working days.
                 </p>
-                <a
-                    href="#"
-                    className="flex items-center gap-4 bg-zintra-surface text-zintra-ink py-zintra-3 ps-zintra-7 pe-zintra-3 rounded-full mt-zintra-9"
-                >
-                    Book a call
-                    <span className="bg-zintra-secondary w-10 h-10 rounded-full flex items-center justify-center shrink-0">
-                        <Image src="/images/nav-arrow.svg" width={12} height={12} alt="" />
-                    </span>
-                </a>
+                <Button iconRight="/images/nav-arrow.svg" type="ctaSecondary" size="iconOnly" className="bg-zintra-card text-zintra-ink mt-zintra-9">
+                    Start a conversation
+                </Button>
             </div>
         </section>
     )

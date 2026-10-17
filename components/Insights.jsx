@@ -31,7 +31,7 @@ const LatestInsights = () => {
     ]
 
     return (
-        <section id="latest-insights" className="bg-white mt-zintra-14">
+        <section id="insights" className="bg-white mt-zintra-14">
             <div className="max-w-7xl mx-auto px-zintra-7">
                 <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
                     Latest Insights

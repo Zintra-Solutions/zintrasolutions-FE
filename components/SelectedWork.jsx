@@ -16,11 +16,11 @@ const SelectedWork = () => {
 
             <div className="relative max-w-7xl mx-auto px-zintra-7">
 
-                <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 rounded-full">
+                <span className="inline-flex items-center border border-zintra-primary text-zintra-primary text-body-sm px-zintra-5 py-zintra-2 mb-zintra-6 rounded-full">
                     Selected work
                 </span>
 
-                <div className="flex items-center justify-between gap-zintra-6 mt-zintra-5">
+                <div className="flex items-center justify-between gap-zintra-6 mb-zintra-10">
                     <h2 className="text-h1 font-bold">Projects we&apos;ve worked on</h2>
                     <a
                         href="#"
