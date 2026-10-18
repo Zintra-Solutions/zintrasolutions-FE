@@ -19,7 +19,7 @@ const ServiceFaq = () => {
                             A shared direction, visible progress and a considered handover. You always know what we&apos;re making, and why.
                         </p>
                     </div>
-                    <div className="">
+                    <div >
                         {faqData.map((item, index) => (
                             <div key={index} className="mb-4">
                                 <h3 className="font-semibold text-lg">{item.question}</h3>
