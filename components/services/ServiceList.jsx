@@ -11,7 +11,7 @@ const ServiceList = () => {
 
     return (
         <main>
-            <div className="py-zintra-12 bg-zintra-surface-tint">
+            <div className="py-zintra-12 bg-zintra-surface">
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-zintra-5">
                         <p className="flex items-center gap-2.5 uppercase font-semibold text-xs">

@@ -24,7 +24,7 @@ const ServiceClarity = () => {
                     {processData.map((process) => (
                         <div key={process.id} className="flex flex-col items-start gap-4">
                             <div className="shrink-0">
-                                <span className="inline-flex justify-center items-center text-zintra-secondary font-semibold">{process.id}</span>
+                                <span className="inline-flex justify-center text-caption items-center text-zintra-secondary font-semibold">{process.id}</span>
                             </div>
                             <div className="flex flex-col h-full">
                                 <h2 className="text-h5 mb-zintra-4">{process.title}</h2>
