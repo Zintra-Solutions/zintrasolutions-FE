@@ -3,7 +3,7 @@ import Button from "./ui/Button"
 
 const FinalCTA = () => {
     return (
-        <section className="mt-zintra-14 py-zintra-13 bg-zintra-ink">
+        <section className="py-zintra-13 bg-zintra-ink">
             <div className="max-w-3xl mx-auto px-zintra-7 flex flex-col items-center text-center">
                 <h2 className="text-display-2 font-bold text-white text-center">Have something worth building?</h2>
                 <p className="text-body-base text-white/70 mt-zintra-6">

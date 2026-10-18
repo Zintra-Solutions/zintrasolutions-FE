@@ -3,7 +3,7 @@ import {faqData} from "@/constants/processData"
 
 const ServiceFaq = () => {
     return (
-        <div className="py-zintra-12 bg-zintra-primary-on text-zintra-ink">
+        <div className="pt-zintra-12 bg-zintra-primary-on text-zintra-ink">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-zintra-5">
                     <p className="flex items-center gap-2.5 uppercase font-semibold text-xs">
